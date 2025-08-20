@@ -47,13 +47,7 @@ This project implements a complete data pipeline that:
 
 ### 2. Configure Environment
 
-```bash
-# Copy the example environment file
-cp env.example .env
-
-# Edit .env with your API key and preferences
-nano .env
-```
+#### Refer below 
 
 **Required Environment Variables:**
 ```bash
@@ -244,46 +238,11 @@ byte/
 - **Network Security**: Consider using VPN for production deployments
 - **Access Control**: Change default Airflow credentials
 
-## 🚀 Production Deployment
-
-For production use, consider:
-
-1. **Environment Variables**: Use a secure secrets management system
-2. **Database**: Use managed PostgreSQL service (AWS RDS, Google Cloud SQL, etc.)
-3. **Monitoring**: Add Prometheus/Grafana for metrics
-4. **Backup**: Implement automated database backups
-5. **Scaling**: Use Kubernetes for container orchestration
-6. **Security**: Implement proper authentication and authorization
-
 ## 📝 API Limits
 
 - **Alpha Vantage Free Tier**: 5 API calls per minute, 500 per day
 - **Current Implementation**: 15-second delay between requests
 - **Recommended**: Monitor usage and upgrade to paid tier if needed
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests
-5. Submit a pull request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 🆘 Support
-
-If you encounter issues:
-
-1. Check the troubleshooting section above
-2. Review the logs: `docker compose logs`
-3. Test the API connection: `python airflow/scripts/test.py`
-4. Open an issue with detailed error information
-
----
-
-**Happy Data Pipeline Building! 🎉**
 
 
